@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --site-font: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --display-font: "LXGW WenKai", "霞鹜文楷", "FZQingKeBenYueSong", "方正清刻本悦宋", var(--site-font);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+body {
+  min-width: 320px;
+  font-family: var(--site-font);
+  font-weight: 500;
+  color: #26211d;
+  background: #fbf7ef;
+  line-height: 1.65;
+  letter-spacing: 0;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(219, 169, 79, 0.72);
+  outline-offset: 3px;
+}

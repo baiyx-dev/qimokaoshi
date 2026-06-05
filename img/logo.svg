@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 52" role="img" aria-label="陕西非遗">
+  <rect width="180" height="52" rx="10" fill="#8f1d14"/>
+  <path d="M18 37c16-20 35-24 57-9 18 12 36 9 54-10" fill="none" stroke="#f6c65b" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="41" cy="21" r="8" fill="#f6c65b"/>
+  <text x="72" y="33" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="21" font-weight="700" fill="#fff7df">陕西非遗</text>
+</svg>

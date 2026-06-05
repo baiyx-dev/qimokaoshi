@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>非遗项目 - 陕西非遗传播与互动平台</title>
+  <link rel="stylesheet" href="css/reset.css?v=20260601a">
+  <link rel="stylesheet" href="css/common.css?v=20260605b">
+  <link rel="stylesheet" href="css/pages.css?v=20260605e">
+  <link rel="stylesheet" href="css/responsive.css?v=20260605a">
+</head>
+<body class="projects-body immersive-body">
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="index.html"><img src="img/logo.svg" alt="秦声陕艺 logo"></a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="projects.html">非遗项目</a></li>
+        <li><a class="nav-link" href="inheritors.html">非遗传承人</a></li>
+        <li><a class="nav-link" href="experience.html">非遗体验</a></li>
+        <li><a class="nav-link" href="news.html">文化资讯</a></li>
+        <li><a class="nav-link" href="contact.html">联系我们</a></li>
+        <li><a class="nav-link" href="about.html">品牌故事</a></li>
+        <li><a class="nav-link" href="login.html">登录</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main immersive-page projects-page">
+    <section class="page-hero projects-hero">
+      <div class="container">
+        <h1>非遗项目</h1>
+        <p>延安腰鼓、渭南老腔、宝鸡泥塑、关中秦腔，汇成一幅流动的陕西非遗长卷。</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="filter-panel">
+          <input id="projectKeyword" type="search" placeholder="搜索心动非遗">
+          <select id="projectCategory" aria-label="项目分类">
+            <option value="all">全部看点</option>
+            <option value="drama">传统戏剧</option>
+            <option value="dance">传统舞蹈</option>
+            <option value="art">传统美术</option>
+            <option value="music">传统音乐</option>
+          </select>
+          <select id="projectRegion" aria-label="项目地域">
+            <option value="all">全部地域</option>
+            <option value="yanan">延安</option>
+            <option value="weinan">渭南</option>
+            <option value="baoji">宝鸡</option>
+            <option value="guanzhong">关中</option>
+            <option value="shaanxi">陕西多地</option>
+          </select>
+          <select id="projectSort" aria-label="排序方式">
+            <option value="name">名称序列</option>
+            <option value="year">年代序列</option>
+          </select>
+        </div>
+        <p id="projectCount" class="section-desc">精选 8 项陕西非遗</p>
+        <section class="wish-panel" aria-labelledby="wishTitle">
+          <div>
+            <p class="eyebrow">我的非遗清单</p>
+            <h2 id="wishTitle">先收藏，再安排体验路线</h2>
+          </div>
+          <div id="projectWishListView" class="wish-list-view"></div>
+        </section>
+        <div id="projectList" class="grid four" style="margin-top: 18px;">
+          <article class="card project-card" data-name="安塞腰鼓" data-category="dance" data-region="yanan" data-year="2006">
+            <img class="card-media" src="img/materials/hd/ansai-yangge-drum/ansai-cctv-02.jpg" alt="安塞腰鼓">
+            <div class="card-body">
+              <h3>安塞腰鼓</h3>
+              <p>从黄土地走向火车站、广场和节庆舞台。画面里的红鼓和白头巾，是陕北年味最直接的识别点。</p>
+              <div class="project-meta"><span>类别：传统舞蹈</span><span>地区：延安</span></div>
+              <ul><li>节奏鲜明</li><li>队形变化丰富</li></ul>
+            </div>
+          </article>
+          <article class="card project-card" data-name="华县皮影戏" data-category="drama" data-region="weinan" data-year="2006">
+            <img class="card-media" src="img/materials/hd/huaxian-shadow/huazhou-xinhua-2025-02.png" alt="华县皮影戏">
+            <div class="card-body">
+              <h3>华县皮影戏</h3>
+              <p>影偶的镂刻、染彩和操控都很讲究。离开展柜，回到工作台，皮影才有了手艺人的温度。</p>
+              <div class="project-meta"><span>类别：传统戏剧</span><span>地区：渭南</span></div>
+              <ul><li>雕刻精细</li><li>唱演结合</li></ul>
+            </div>
+          </article>
+          <article class="card project-card" data-name="秦腔" data-category="drama" data-region="guanzhong" data-year="2006">
+            <img class="card-media" src="img/materials/hd/qinqiang-opera/qinqiang-cctv-01.jpg" alt="秦腔">
+            <div class="card-body">
+              <h3>秦腔</h3>
+              <p>秦腔不只在剧场里，非遗集市和广场也能听到。它的高腔、板式和行当，是关中气质的一部分。</p>
+              <div class="project-meta"><span>类别：传统戏剧</span><span>地区：关中</span></div>
+              <ul><li>唱腔高亢</li><li>剧目丰富</li></ul>
+            </div>
+          </article>
+          <article class="card project-card" data-name="凤翔泥塑" data-category="art" data-region="baoji" data-year="2006">
+            <img class="card-media" src="img/materials/hd/fengxiang-clay/fengxiang-xinhua-video-poster.png" alt="凤翔泥塑">
+            <div class="card-body">
+              <h3>凤翔泥塑</h3>
+              <p>六营村的泥塑以生肖、虎、龙等形象最容易被记住。泥胎成型后再上色，颜色越大胆越有年节气。</p>
+              <div class="project-meta"><span>类别：传统美术</span><span>地区：宝鸡</span></div>
+              <ul><li>造型质朴</li><li>色彩强烈</li></ul>
+            </div>
+          </article>
+          <article class="card project-card" data-name="宝鸡社火脸谱" data-category="art" data-region="baoji" data-year="2008">
+            <img class="card-media" src="img/materials/hd/baoji-folkcraft/baoji-folkcraft-xinhua-03.jpg" alt="宝鸡社火脸谱">
+            <div class="card-body">
+              <h3>宝鸡社火脸谱</h3>
+              <p>马勺、脸谱和社火连在一起看，才有完整的民俗语境。它不是单纯装饰，而是节庆角色的视觉语言。</p>
+              <div class="project-meta"><span>类别：传统美术</span><span>地区：宝鸡</span></div>
+              <ul><li>色彩浓烈</li><li>民俗寓意鲜明</li></ul>
+            </div>
+          </article>
+          <article class="card project-card" data-name="陕西剪纸" data-category="art" data-region="shaanxi" data-year="2008">
+            <img class="card-media" src="img/materials/hd/yulin-heritage-fair/yulin-fair-photo-xinhua-01.jpg" alt="陕西剪纸">
+            <div class="card-body">
+              <h3>陕西剪纸</h3>
+              <p>剪纸常出现在窗花、节庆和婚俗里。榆林非遗大集的现场图，让这门手艺和日常生活重新连在一起。</p>
+              <div class="project-meta"><span>类别：传统美术</span><span>地区：陕西多地</span></div>
+              <ul><li>图案吉祥</li><li>生活气息浓</li></ul>
+            </div>
+          </article>
+          <article class="card project-card" data-name="黄河老腔" data-category="music" data-region="weinan" data-year="2009">
+            <img class="card-media" src="img/materials/hd/huanghe-laoqiang/laoqiang-xinhua-01.jpg" alt="黄河老腔">
+            <div class="card-body">
+              <h3>黄河老腔</h3>
+              <p>黄河老腔带着码头号子的底色，唱起来粗粝、敞亮。走进校园后，年轻人也能听见黄河岸边的老声音。</p>
+              <div class="project-meta"><span>类别：传统音乐</span><span>地区：渭南</span></div>
+              <ul><li>唱腔粗犷</li><li>传习进校园</li></ul>
+            </div>
+          </article>
+          <article class="card project-card" data-name="合阳提线木偶" data-category="drama" data-region="weinan" data-year="2006">
+            <img class="card-media" src="img/materials/hd/heyang-puppets/puppets-xinhua-01.jpg" alt="合阳提线木偶">
+            <div class="card-body">
+              <h3>合阳提线木偶</h3>
+              <p>台上看的是木偶，台下靠的是演员手上的线。细小的抬手、转身和点头，都藏着功夫。</p>
+              <div class="project-meta"><span>类别：传统戏剧</span><span>地区：渭南</span></div>
+              <ul><li>操控精细</li><li>剧目生动</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><strong>秦声陕艺</strong><p>延安、渭南、宝鸡和关中的非遗项目</p></div></footer>
+  <script src="js/main.js?v=20260528d"></script>
+  <script src="js/search.js?v=20260605c"></script>
+</body>
+</html>

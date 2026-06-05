@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 - 陕西非遗传播与互动平台</title>
+  <link rel="stylesheet" href="css/reset.css?v=20260601a">
+  <link rel="stylesheet" href="css/common.css?v=20260605b">
+  <link rel="stylesheet" href="css/pages.css?v=20260605e">
+  <link rel="stylesheet" href="css/responsive.css?v=20260605a">
+</head>
+<body class="contact-body immersive-body">
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="index.html"><img src="img/logo.svg" alt="秦声陕艺 logo"></a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="projects.html">非遗项目</a></li>
+        <li><a class="nav-link" href="inheritors.html">非遗传承人</a></li>
+        <li><a class="nav-link" href="experience.html">非遗体验</a></li>
+        <li><a class="nav-link" href="news.html">文化资讯</a></li>
+        <li><a class="nav-link" href="contact.html">联系我们</a></li>
+        <li><a class="nav-link" href="about.html">品牌故事</a></li>
+        <li><a class="nav-link" href="login.html">登录</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main immersive-page contact-page">
+    <section class="page-hero contact-hero">
+      <div class="container">
+        <h1>联系我们</h1>
+        <p>预约体验、共创活动、联名合作，让陕西非遗抵达更多现场。</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="contact-band">
+          <div class="contact-item"><h3>校园共创</h3><p>把皮影、泥塑、腰鼓带进课堂与社团。</p></div>
+          <div class="contact-item"><h3>城市活动</h3><p>为市集、展演和文旅空间加入陕西非遗亮点。</p></div>
+          <div class="contact-item"><h3>品牌联名</h3><p>以秦声、灯影和泥彩打造独特文化记忆。</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section alt">
+      <div class="container split">
+        <form class="form-panel" data-validate="contact" novalidate>
+          <h2>合作预约</h2>
+          <div class="field">
+            <label for="contactName">姓名</label>
+            <input id="contactName" name="contactName" type="text" placeholder="姓名">
+            <span class="error" data-error="contactName"></span>
+          </div>
+          <div class="field">
+            <label for="email">邮箱</label>
+            <input id="email" name="email" type="email" placeholder="example@mail.com">
+            <span class="error" data-error="email"></span>
+          </div>
+          <div class="field">
+            <label for="message">合作意向</label>
+            <textarea id="message" name="message" placeholder="活动、展演、课堂、联名"></textarea>
+            <span class="error" data-error="message"></span>
+          </div>
+          <button class="btn" type="submit">提交合作</button>
+          <p data-form-status></p>
+        </form>
+        <div class="map-box">让陕西非遗抵达你的现场</div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><strong>秦声陕艺</strong><p>共创一场有声有色的非遗活动</p></div></footer>
+  <script src="js/main.js?v=20260528d"></script>
+  <script src="js/form-validate.js?v=20260605b"></script>
+</body>
+</html>

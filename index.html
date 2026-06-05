@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陕西非遗传播与互动平台</title>
+  <link rel="stylesheet" href="css/reset.css?v=20260601a">
+  <link rel="stylesheet" href="css/common.css?v=20260605b">
+  <link rel="stylesheet" href="css/index.css?v=20260605b">
+  <link rel="stylesheet" href="css/responsive.css?v=20260605a">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="index.html"><img src="img/logo.svg" alt="秦声陕艺 logo"></a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="projects.html">非遗项目</a></li>
+        <li><a class="nav-link" href="inheritors.html">非遗传承人</a></li>
+        <li><a class="nav-link" href="experience.html">非遗体验</a></li>
+        <li><a class="nav-link" href="news.html">文化资讯</a></li>
+        <li><a class="nav-link" href="contact.html">联系我们</a></li>
+        <li><a class="nav-link" href="about.html">品牌故事</a></li>
+        <li><a class="nav-link" href="login.html">登录</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="slides" aria-label="陕西非遗首页轮播图">
+        <figure class="slide active"><img src="img/materials/hd/xian-heritage-market/xian-market-xinhua-07.jpg" alt="秦腔表演"></figure>
+        <figure class="slide"><img src="img/materials/hd/huaxian-shadow/huazhou-xinhua-2025-poster.jpg" alt="华州皮影戏"></figure>
+        <figure class="slide"><img src="img/materials/hd/fengxiang-clay/fengxiang-xinhua-video-poster.png" alt="凤翔泥塑"></figure>
+      </div>
+      <div class="hero-content">
+        <div class="hero-kicker">秦声、皮影、泥塑和腰鼓</div>
+        <h1>陕西非遗，先从现场看起</h1>
+        <p>城墙下有秦腔开嗓，黄河边有老腔传习，华州的灯幕后还有皮影上场。把这些画面放在一起，陕西非遗就不只是名录上的名字。</p>
+        <div class="hero-actions">
+          <a class="btn" href="projects.html">浏览非遗项目</a>
+          <a class="btn secondary" href="experience.html">预约体验活动</a>
+        </div>
+      </div>
+      <div class="carousel-controls" aria-label="轮播控制">
+        <button class="carousel-btn" type="button" data-carousel="prev" aria-label="上一张">‹</button>
+        <button class="dot active" type="button" aria-label="第 1 张"></button>
+        <button class="dot" type="button" aria-label="第 2 张"></button>
+        <button class="dot" type="button" aria-label="第 3 张"></button>
+        <button class="carousel-btn" type="button" data-carousel="next" aria-label="下一张">›</button>
+      </div>
+    </section>
+
+    <div class="scroll-video-page" data-scroll-video>
+      <div class="scroll-video-bg" aria-hidden="true">
+        <video id="heritageScrollVideo" muted playsinline preload="auto" data-frame-rate="15" src="img/video/heritage-scroll-keyframes.mp4?v=20260601d"></video>
+        <div class="scroll-video-shade"></div>
+      </div>
+
+      <div class="scroll-video-content">
+        <section class="section alt">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">正在发生的现场</p>
+                <h2 class="section-title">台上有声音，桌上有手艺</h2>
+              </div>
+              <a class="btn secondary" href="projects.html">查看全部</a>
+            </div>
+            <div class="grid three">
+              <article class="card">
+                <img class="card-media" src="img/materials/hd/ansai-yangge-drum/ansai-cctv-04.jpg" alt="安塞腰鼓" loading="lazy" decoding="async">
+                <div class="card-body">
+                  <h3>安塞腰鼓</h3>
+                  <p>鼓点一起，队伍就往前推。红鼓、白头巾和黄土地挤在同一个画面里，陕北的年味一下就出来了。</p>
+                  <div class="tag-row"><span class="tag">传统舞蹈</span><span class="tag">陕北</span></div>
+                </div>
+              </article>
+              <article class="card">
+                <img class="card-media" src="img/materials/hd/huaxian-shadow/huazhou-xinhua-2025-01.png" alt="陕西皮影戏" loading="lazy" decoding="async">
+                <div class="card-body">
+                  <h3>陕西皮影戏</h3>
+                  <p>一张牛皮、一盏灯、一方白幕，人物就能开口说故事。真正费功夫的地方，在刻线、染彩和一根根操纵杆上。</p>
+                  <div class="tag-row"><span class="tag">传统戏剧</span><span class="tag">皮影</span></div>
+                </div>
+              </article>
+              <article class="card">
+                <img class="card-media" src="img/materials/hd/fengxiang-clay/fengxiang-xinhua-video-poster.png" alt="凤翔泥塑" loading="lazy" decoding="async">
+                <div class="card-body">
+                  <h3>凤翔泥塑</h3>
+                  <p>凤翔泥塑不靠光滑取胜，靠的是粗朴的轮廓和大胆的颜色。虎、龙、生肖一摆出来，就有了关中的年节气。</p>
+                  <div class="tag-row"><span class="tag">传统美术</span><span class="tag">手工艺</span></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section region-section">
+          <div class="container">
+            <div class="section-head wide-head">
+              <div>
+                <p class="eyebrow">陕西非遗地图</p>
+                <h2 class="section-title">按地域找项目，路线一下清楚</h2>
+              </div>
+              <p class="section-desc">从延安的腰鼓、渭南的老腔与皮影，到宝鸡的泥塑和关中的秦腔，地域就是陕西非遗最清晰的入口。</p>
+            </div>
+            <div class="region-grid" aria-label="陕西非遗地域入口">
+              <a class="region-card yanan" href="projects.html?region=yanan">
+                <span>延安</span>
+                <h3>鼓声从黄土里起来</h3>
+                <p>安塞腰鼓、陕北秧歌和节庆广场，适合先看气势。</p>
+              </a>
+              <a class="region-card weinan" href="projects.html?region=weinan">
+                <span>渭南</span>
+                <h3>灯影和老腔都有回声</h3>
+                <p>华县皮影、黄河老腔、合阳提线木偶，适合看戏与听声。</p>
+              </a>
+              <a class="region-card baoji" href="projects.html?region=baoji">
+                <span>宝鸡</span>
+                <h3>泥彩和脸谱最有年味</h3>
+                <p>凤翔泥塑、社火脸谱，适合动手体验与民俗观察。</p>
+              </a>
+              <a class="region-card guanzhong" href="projects.html?region=guanzhong">
+                <span>关中</span>
+                <h3>一开嗓就是秦地气口</h3>
+                <p>秦腔与古城现场连在一起，适合从声音进入陕西。</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section sound-section">
+          <div class="container">
+            <div class="section-head wide-head">
+              <div>
+                <p class="eyebrow">关中声浪</p>
+                <h2 class="section-title">秦腔一开嗓，整座城都有回声</h2>
+              </div>
+              <p class="section-desc">唱腔、鼓点、弦板和人声交错起来，古老技艺有了当代现场的热度。</p>
+            </div>
+            <div class="sound-grid">
+              <article class="sound-panel large">
+                <img src="img/materials/hd/qinqiang-opera/qinqiang-cctv-01.jpg" alt="秦腔舞台" loading="lazy" decoding="async">
+                <div>
+                  <span>秦腔</span>
+                  <h3>高腔入云</h3>
+                  <p>一声拖腔压住全场，关中人的豪迈从台口奔出来。</p>
+                </div>
+              </article>
+              <article class="sound-panel">
+                <img src="img/materials/hd/huanghe-laoqiang/laoqiang-xinhua-03.jpg" alt="黄河老腔" loading="lazy" decoding="async">
+                <div>
+                  <span>老腔</span>
+                  <h3>黄河作响</h3>
+                  <p>板凳、月琴和吼声相撞，粗粝里带着力量。</p>
+                </div>
+              </article>
+              <article class="sound-panel">
+                <img src="img/materials/hd/heyang-puppets/puppets-xinhua-02.jpg" alt="合阳提线木偶" loading="lazy" decoding="async">
+                <div>
+                  <span>木偶</span>
+                  <h3>指尖生动</h3>
+                  <p>线一提，衣袖翻飞，小小戏台也有大天地。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section history-section">
+          <div class="container history-layout">
+            <div class="history-lead">
+              <p class="eyebrow">千年回声</p>
+              <h2 class="section-title">从长安礼乐到黄土高坡，陕西非遗一直在生长</h2>
+              <p>陕西的非遗不是静止的陈列。它从周秦汉唐的历史土层里走来，也从关中村社、陕北节庆、渭河岸边和秦岭北麓的民间生活里长出来。秦腔的高腔、老腔的帮唱、西安鼓乐的古谱、华州皮影的灯幕、凤翔泥塑的彩绘、安塞腰鼓的奔腾，合在一起，构成了陕西最有辨识度的文化声场。</p>
+              <p>在古长安及周边地区，礼乐、庙会、乐社和民间演出长期交织。西安鼓乐保存着庞大的曲目和古老的乐谱传统，部分曲名与唐代大曲、唐宋燕乐和教坊音乐相呼应；秦腔则在关中民间音乐、方言声腔和戏曲舞台之间成形，明清以后随商旅足迹远行，影响了多个地方剧种。</p>
+            </div>
+            <div class="history-notes">
+              <article>
+                <span>戏曲</span>
+                <h3>秦腔与老腔</h3>
+                <p>秦腔有欢音、苦音之分，板式和行当完整，唱腔高亢激越，舞台上兼有唱念做打和工架特技。华阴老腔以民间说书和皮影演唱为底色，明末清初逐渐成形，一人领唱、众人帮腔，檀板和惊木把渭河岸边的粗粝气息推到台前。</p>
+              </article>
+              <article>
+                <span>灯影</span>
+                <h3>皮影的白幕</h3>
+                <p>皮影戏以兽皮或纸板剪刻人物，借灯光投影演故事。宋代城市瓦舍中已有成熟影戏，历经宋、金、元、明的发展，到清代更加繁盛。华县皮影把雕刻、染色、唱腔和操纵合成一门完整技艺，一方白幕能容纳家国故事，也能照见民间审美。</p>
+              </article>
+              <article>
+                <span>泥彩</span>
+                <h3>凤翔的年节色</h3>
+                <p>凤翔泥塑以十二生肖、虎、脸谱、挂片和历史人物见长。黑粘土入模成形，白粉打底，再以大红、大绿、大黄铺开喜庆色彩。它原本贴近祈福、镇宅和节令生活，造型夸张质朴，却有强烈的民间装饰力量。</p>
+              </article>
+              <article>
+                <span>鼓舞</span>
+                <h3>安塞腰鼓</h3>
+                <p>安塞腰鼓在陕北生产、祭祀、节庆和群众舞蹈中不断转换角色。关于它的起源，民间常把鼓声与古代军阵、祭天祈丰和乡土庆典相连；进入现代舞台后，腰鼓把集体性的步伐、呐喊和鼓点放大，成为陕北精神气质最鲜明的视觉符号之一。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section craft-section">
+          <div class="container craft-layout">
+            <div class="craft-copy">
+              <p class="eyebrow">灯影与泥彩</p>
+              <h2 class="section-title">手上有纹路，光里有故事</h2>
+              <p class="section-desc">皮影的刻线像刀尖上的书法，泥塑的色块像年节里的焰火。看见它们，就看见陕西民间审美的筋骨。</p>
+              <div class="craft-actions">
+                <a class="btn" href="projects.html">走近项目</a>
+                <a class="btn secondary" href="experience.html">加入体验</a>
+              </div>
+            </div>
+            <div class="image-stack" aria-label="皮影与泥塑">
+              <img class="stack-main" src="img/materials/hd/huaxian-shadow/huazhou-xinhua-2025-04.png" alt="华州皮影刻制" loading="lazy" decoding="async">
+              <img class="stack-float top" src="img/materials/hd/fengxiang-clay/fengxiang-xinhua-video-poster.png" alt="凤翔泥塑彩绘" loading="lazy" decoding="async">
+              <img class="stack-float bottom" src="img/materials/hd/baoji-folkcraft/baoji-folkcraft-xinhua-03.jpg" alt="宝鸡民间手作" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </section>
+
+        <section class="section pulse-section">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">非遗入城</p>
+                <h2 class="section-title">从剧场到街巷，热闹一直在场</h2>
+              </div>
+              <a class="btn secondary" href="news.html">进入资讯</a>
+            </div>
+            <div class="pulse-row">
+              <article>
+                <img src="img/materials/hd/xian-heritage-market/xian-market-xinhua-04.jpg" alt="西安非遗市集" loading="lazy" decoding="async">
+                <h3>城墙下的市集</h3>
+                <p>灯火、人潮、手作摊位连成一片，传统技艺走进年轻人的周末。</p>
+              </article>
+              <article>
+                <img src="img/materials/hd/yulin-heritage-fair/yulin-fair-photo-xinhua-08.jpg" alt="榆林非遗展示" loading="lazy" decoding="async">
+                <h3>陕北的会场</h3>
+                <p>腰鼓、剪纸、说书和民歌同台，黄土高原的气息扑面而来。</p>
+              </article>
+              <article>
+                <img src="img/materials/hd/longzhou-shehuo/longzhou-shehuo-xinhua-01.jpg" alt="陇州社火" loading="lazy" decoding="async">
+                <h3>社火的巡游</h3>
+                <p>锣鼓开路，彩面登场，一条街都被年俗点亮。</p>
+              </article>
+              <article>
+                <img src="img/materials/hd/ansai-yangge-drum/ansai-cctv-10.jpg" alt="安塞腰鼓队伍" loading="lazy" decoding="async">
+                <h3>鼓队的奔涌</h3>
+                <p>红绸翻飞，脚步落地，陕北的热烈有了清晰的节奏。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section route-section">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">沉浸旅程</p>
+                <h2 class="section-title">一城秦声，满目陕艺</h2>
+              </div>
+              <p class="section-desc">让鼓声、灯影、泥彩和老腔在同一段旅程里相遇。</p>
+            </div>
+            <ul class="timeline">
+              <li><strong>秦声开场：</strong>锣鼓一响，关中气象扑面而来。</li>
+              <li><strong>灯影入梦：</strong>一方白幕，照见华州皮影的古韵新生。</li>
+              <li><strong>泥彩成形：</strong>凤翔泥塑把年节的热烈留在掌心。</li>
+              <li><strong>黄河回声：</strong>老腔、腰鼓和木偶，把陕西唱给更多人听。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section finale-section">
+          <div class="container finale-card">
+            <div>
+              <p class="eyebrow">今夜上场</p>
+              <h2 class="section-title">让陕西非遗被更多人看见</h2>
+              <p class="section-desc">从一张影人、一声秦腔、一面腰鼓开始，走进更辽阔的陕西现场。</p>
+            </div>
+            <div class="finale-links">
+              <a class="btn" href="inheritors.html">看见传承人</a>
+              <a class="btn secondary" href="contact.html">联系合作</a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <div class="footer-inner">
+            <strong>秦声陕艺</strong>
+            <p>从影像、项目和体验走近陕西非遗</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js?v=20260601d"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/scroll-video.js?v=20260601d"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>非遗体验 - 陕西非遗传播与互动平台</title>
+  <link rel="stylesheet" href="css/reset.css?v=20260601a">
+  <link rel="stylesheet" href="css/common.css?v=20260605b">
+  <link rel="stylesheet" href="css/pages.css?v=20260605e">
+  <link rel="stylesheet" href="css/responsive.css?v=20260605a">
+</head>
+<body class="experience-body immersive-body">
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="index.html"><img src="img/logo.svg" alt="秦声陕艺 logo"></a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="projects.html">非遗项目</a></li>
+        <li><a class="nav-link" href="inheritors.html">非遗传承人</a></li>
+        <li><a class="nav-link" href="experience.html">非遗体验</a></li>
+        <li><a class="nav-link" href="news.html">文化资讯</a></li>
+        <li><a class="nav-link" href="contact.html">联系我们</a></li>
+        <li><a class="nav-link" href="about.html">品牌故事</a></li>
+        <li><a class="nav-link" href="login.html">登录</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main immersive-page experience-page">
+    <section class="page-hero experience-hero">
+      <div class="container">
+        <h1>非遗体验</h1>
+        <p>泥塑要等颜料干，皮影要对着光看，腰鼓要站稳了再敲。选一项，坐下来慢慢试。</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">体验预约</p>
+              <h2 class="section-title">别只看，动手试一次</h2>
+            </div>
+          </div>
+          <form class="form-panel" data-validate="experience" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="userName">姓名</label>
+                <input id="userName" name="userName" type="text" placeholder="如：李小安">
+                <span class="error" data-error="userName"></span>
+              </div>
+              <div class="field">
+                <label for="phone">手机号</label>
+                <input id="phone" name="phone" type="tel" placeholder="11 位手机号">
+                <span class="error" data-error="phone"></span>
+              </div>
+              <div class="field">
+                <label for="activity">体验项目</label>
+                <select id="activity" name="activity">
+                  <option value="">请选择</option>
+                  <option value="clay">凤翔泥塑彩绘</option>
+                  <option value="shadow">皮影人物制作</option>
+                  <option value="drum">安塞腰鼓基础体验</option>
+                </select>
+                <span class="error" data-error="activity"></span>
+              </div>
+              <div class="field">
+                <label for="date">预约日期</label>
+                <input id="date" name="date" type="date">
+                <span class="error" data-error="date"></span>
+              </div>
+              <div class="field full">
+                <label>参与人数</label>
+                <div class="choice-row">
+                  <label><input type="radio" name="people" value="1" checked> 1 人</label>
+                  <label><input type="radio" name="people" value="2"> 2 人</label>
+                  <label><input type="radio" name="people" value="group"> 小组</label>
+                </div>
+              </div>
+              <div class="field full">
+                <label for="message">备注</label>
+                <textarea id="message" name="message" placeholder="皮影上色、泥塑彩绘、腰鼓体验"></textarea>
+              </div>
+              <div class="field full">
+                <div class="choice-row">
+                  <label><input id="agree" name="agree" type="checkbox"> 我确认报名信息无误</label>
+                </div>
+                <span class="error" data-error="agree"></span>
+              </div>
+            </div>
+            <button class="btn" type="submit">提交报名</button>
+            <p data-form-status></p>
+          </form>
+        </div>
+        <aside>
+          <div class="activity-list">
+            <article class="activity">
+              <img src="img/materials/hd/fengxiang-clay/fengxiang-xinhua-video-poster.png" alt="凤翔泥塑彩绘">
+              <span class="activity-status open">可预约</span>
+              <h3>凤翔泥塑彩绘</h3>
+              <p>从白坯开始描线、填色，颜色压上去以后，泥坯才慢慢有了神气。</p>
+            </article>
+            <article class="activity">
+              <img src="img/materials/hd/huaxian-shadow/huazhou-xinhua-2025-05.png" alt="皮影人物制作">
+              <span class="activity-status hot">名额紧张</span>
+              <h3>皮影人物制作</h3>
+              <p>先看影偶的头、身、臂和操纵杆，再试着上色、连接，让人物能动起来。</p>
+            </article>
+            <article class="activity">
+              <img src="img/materials/hd/ansai-yangge-drum/ansai-cctv-08.jpg" alt="安塞腰鼓基础体验">
+              <span class="activity-status full">本周已满</span>
+              <h3>安塞腰鼓基础体验</h3>
+              <p>先练基础鼓点和站姿，再做简单队形配合。鼓声齐了，队伍才站得住。</p>
+            </article>
+          </div>
+          <div class="video-panel">
+            <h3>光影皮影</h3>
+            <video controls preload="metadata" poster="img/materials/hd/huaxian-shadow/huaxian-xinhua-video-poster.png">
+              <source src="img/video/huaxian-shadow-xinhua-1280x720.mp4" type="video/mp4">
+            </video>
+            <p>一灯一幕，古韵新香。</p>
+          </div>
+          <div class="quiz-panel" data-quiz>
+            <h3>秦声挑战</h3>
+            <p data-quiz-question>一眼认出陕西戏曲名片。</p>
+            <div class="quiz-options" data-quiz-options></div>
+            <div class="quiz-progress" data-quiz-progress></div>
+            <p data-quiz-result></p>
+            <button class="btn secondary quiz-restart" type="button" data-quiz-restart hidden>重新挑战</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><strong>秦声陕艺</strong><p>坐下来，亲手做一次</p></div></footer>
+  <script src="js/main.js?v=20260528d"></script>
+  <script src="js/form-validate.js?v=20260605b"></script>
+  <script src="js/quiz.js?v=20260605b"></script>
+</body>
+</html>
