@@ -8,18 +8,25 @@ document.addEventListener("DOMContentLoaded", function () {
   var lastTime = -1;
   var lastSeekAt = 0;
   var isActive = false;
-  var frameRate = Number(video.dataset.frameRate) || 15;
+  var frameRate = Math.min(Number(video.dataset.frameRate) || 10, 10);
   var frameStep = 1 / frameRate;
-  var minSeekGap = Math.max(50, 1000 / frameRate);
+  var minSeekGap = Math.max(110, 1000 / frameRate);
+  var sectionTop = 0;
+  var scrollable = 1;
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var coarsePointer = window.matchMedia("(hover: none), (max-width: 960px)").matches;
 
   function clamp(value, min, max) {
     return Math.min(Math.max(value, min), max);
   }
 
   function getProgress() {
-    var rect = section.getBoundingClientRect();
-    var scrollable = Math.max(1, section.offsetHeight - window.innerHeight);
-    return clamp(-rect.top / scrollable, 0, 1);
+    return clamp((window.scrollY - sectionTop) / scrollable, 0, 1);
+  }
+
+  function measure() {
+    sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    scrollable = Math.max(1, section.offsetHeight - window.innerHeight);
   }
 
   function render() {
@@ -48,9 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
   function init() {
     duration = video.duration;
     video.pause();
+    measure();
+    if (reduceMotion || coarsePointer) {
+      if (duration && !Number.isNaN(duration)) {
+        video.currentTime = Math.min(duration * 0.32, 1.2);
+      }
+      return;
+    }
     render();
     window.addEventListener("scroll", requestRender, { passive: true });
-    window.addEventListener("resize", requestRender);
+    window.addEventListener("resize", function () {
+      measure();
+      requestRender();
+    });
   }
 
   if ("IntersectionObserver" in window) {

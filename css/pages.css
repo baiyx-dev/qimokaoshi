@@ -3,7 +3,7 @@
   background:
     radial-gradient(circle at 24% 16%, rgba(217, 173, 99, 0.16), transparent 24rem),
     linear-gradient(180deg, rgba(18, 7, 5, 0.44), rgba(18, 7, 5, 0.78) 48%, rgba(18, 7, 5, 0.92)),
-    var(--immersive-bg) center top / cover fixed;
+    var(--immersive-bg) center top / cover no-repeat;
 }
 
 .projects-body {
@@ -122,7 +122,7 @@
   background:
     linear-gradient(180deg, rgba(255, 252, 244, 0.84), rgba(255, 246, 229, 0.78));
   box-shadow: 0 22px 72px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px) saturate(1.08);
+  backdrop-filter: blur(6px) saturate(1.04);
 }
 
 .wish-panel h2 {
@@ -172,7 +172,7 @@
   background:
     linear-gradient(180deg, rgba(255, 252, 244, 0.82), rgba(255, 246, 229, 0.74));
   box-shadow: 0 28px 90px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(14px) saturate(1.12);
+  backdrop-filter: blur(6px) saturate(1.04);
 }
 
 .projects-page .filter-panel input,
@@ -209,7 +209,7 @@
   background:
     linear-gradient(180deg, rgba(255, 252, 244, 0.84), rgba(255, 246, 229, 0.9));
   box-shadow: 0 26px 84px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(10px) saturate(1.08);
+  backdrop-filter: blur(4px) saturate(1.03);
 }
 
 .projects-page .project-card:hover {
@@ -230,7 +230,7 @@
   background:
     linear-gradient(180deg, rgba(255, 252, 244, 0.84), rgba(255, 246, 229, 0.9));
   box-shadow: 0 26px 84px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(10px) saturate(1.08);
+  backdrop-filter: blur(4px) saturate(1.03);
 }
 
 .immersive-page .card:hover,
@@ -246,7 +246,7 @@
     linear-gradient(135deg, rgba(255, 248, 234, 0.72), rgba(240, 225, 196, 0.62)),
     repeating-linear-gradient(45deg, transparent 0 18px, rgba(143, 29, 20, 0.08) 18px 20px);
   box-shadow: 0 26px 84px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(10px) saturate(1.08);
+  backdrop-filter: blur(4px) saturate(1.03);
 }
 
 .immersive-body .site-footer {
@@ -254,7 +254,26 @@
   z-index: 1;
   border-top: 1px solid rgba(255, 231, 177, 0.18);
   background: rgba(24, 10, 6, 0.76);
-  backdrop-filter: blur(12px) saturate(1.08);
+  backdrop-filter: blur(6px) saturate(1.04);
+}
+
+@media (max-width: 960px), (hover: none) {
+  .wish-panel,
+  .projects-page .filter-panel,
+  .projects-page .project-card,
+  .immersive-page .card,
+  .immersive-page .activity,
+  .immersive-page .video-panel,
+  .immersive-page .quiz-panel,
+  .immersive-page .news-list li,
+  .immersive-page .contact-item,
+  .immersive-page .source-list li,
+  .immersive-page .table-wrap,
+  .immersive-page .form-panel,
+  .immersive-page .map-box,
+  .immersive-body .site-footer {
+    backdrop-filter: none;
+  }
 }
 
 .project-card .card-body {

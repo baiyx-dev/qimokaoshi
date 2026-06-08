@@ -44,11 +44,11 @@ body::before {
     linear-gradient(180deg, rgba(255, 253, 250, 0.88), rgba(255, 249, 239, 0.78));
   border-bottom: 1px solid rgba(126, 88, 47, 0.16);
   box-shadow: 0 12px 38px rgba(45, 25, 12, 0.08);
-  backdrop-filter: blur(18px) saturate(1.18);
+  backdrop-filter: blur(10px) saturate(1.08);
 }
 
 .site-header::after {
-  content: "";
+  content: none;
   position: absolute;
   left: 0;
   right: 0;
