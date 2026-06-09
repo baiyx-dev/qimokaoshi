@@ -8,6 +8,9 @@ services:
     autoDeploy: true
     headers:
       - path: /*
+        name: Cache-Control
+        value: no-cache
+      - path: /*
         name: X-Frame-Options
         value: SAMEORIGIN
       - path: /*
